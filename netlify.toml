@@ -1,0 +1,29 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/schengen"
+  to = "/schengen/"
+  status = 301
+
+[[redirects]]
+  from = "/schengen/ar"
+  to = "/schengen/ar/"
+  status = 301
+
+[[redirects]]
+  from = "/indonesia"
+  to = "/indonesia/"
+  status = 301
+
+[[redirects]]
+  from = "/indonesia/ar"
+  to = "/indonesia/ar/"
+  status = 301
