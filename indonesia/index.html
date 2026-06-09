@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelius Travel – Indonesia Visa in 3 Days</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#C0272D;--red-dk:#8B1A1E;--gold:#C9A84C;--gold-lt:#E2C17A;--bg:#0A0A0A;--bg2:#111111;--bg3:#1A1A1A;--surface:#1C1C1C;--border:rgba(255,255,255,0.07);--border-r:rgba(192,39,45,0.25);--border-g:rgba(201,168,76,0.2);--white:#FFFFFF;--w60:rgba(255,255,255,0.6);--w35:rgba(255,255,255,0.35);--gray:#888888;--fd:'Cormorant Garamond',Georgia,serif;--fb:'DM Sans',system-ui,sans-serif}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--bg);color:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 44px;background:rgba(10,10,10,0.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border-g)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-text{font-family:var(--fd);font-size:20px;font-weight:700;color:var(--gold-lt);letter-spacing:2px;text-transform:uppercase}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-badge{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--w60);padding:7px 14px;border:1px solid var(--border);border-radius:20px}
+.nav-badge svg{width:14px;height:14px;color:var(--red);flex-shrink:0}
+.nav-lang{font-size:12px;font-weight:600;color:var(--w60);text-decoration:none;padding:6px 14px;border:1px solid var(--border);border-radius:4px;transition:all .2s}
+.nav-lang:hover{color:var(--gold);border-color:var(--border-g)}
+#hero{min-height:100vh;padding-top:66px;position:relative;overflow:hidden;background:var(--bg2);display:grid;grid-template-columns:1fr 1fr}
+.hero-left{padding:60px 48px 60px 64px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.hero-title{font-family:var(--fd);font-size:clamp(40px,5vw,66px);font-weight:700;line-height:1.1;color:var(--white);margin-bottom:12px}
+.hero-title-days{font-family:var(--fd);font-size:clamp(30px,4vw,50px);font-weight:700;color:var(--red);font-style:italic;display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.days-line{flex:1;height:2px;background:var(--red);opacity:0.4}
+.no-bank-pill{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:6px;margin-bottom:22px;width:fit-content}
+.no-bank-pill svg{width:18px;height:18px;flex-shrink:0}
+.hero-sub{font-size:16px;color:var(--w60);line-height:1.85;margin-bottom:28px;max-width:420px}
+.hero-badges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px}
+.h-badge{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--w60)}
+.h-badge-icon{width:36px;height:36px;border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;background:var(--surface)}
+.btn-apply{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;font-weight:700;font-size:16px;padding:16px 36px;border-radius:6px;text-decoration:none;width:fit-content;transition:background .2s,transform .15s;box-shadow:0 6px 24px rgba(192,39,45,0.3)}
+.btn-apply:hover{background:var(--red-dk);transform:translateY(-1px)}
+.btn-apply svg{width:18px;height:18px}
+.hero-trust-note{margin-top:16px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--w35)}
+.hero-trust-note svg{width:16px;height:16px;flex-shrink:0;color:var(--gold)}
+.hero-right{position:relative;overflow:hidden;min-height:500px}
+.hero-img{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900&q=85') center/cover no-repeat}
+.hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--bg2) 0%,rgba(10,10,10,0.15) 25%,transparent 55%)}
+.visa-float-card{position:absolute;bottom:40px;right:32px;z-index:3;background:var(--surface);border-radius:14px;padding:18px 24px;box-shadow:0 12px 40px rgba(0,0,0,0.5);text-align:center;min-width:160px;border:1px solid var(--border-r)}
+.vfc-icon{font-size:28px;margin-bottom:6px}
+.vfc-label{font-size:11px;letter-spacing:1px;color:var(--gray);font-weight:600}
+.vfc-val{font-family:var(--fd);font-weight:700;font-size:26px;color:var(--red);line-height:1}
+.vfc-sub{font-size:11px;color:var(--gray);margin-top:4px;font-weight:600}
+#how{background:var(--bg);padding:80px 44px;text-align:center}
+.s-eyebrow{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:10px}
+.ey-line{width:40px;height:2px;background:var(--red)}
+.ey-text{font-size:13px;font-weight:700;letter-spacing:2px;color:var(--white);text-transform:uppercase}
+.s-diamond{color:var(--red);font-size:14px;margin-bottom:44px}
+.steps-row{display:flex;justify-content:center;align-items:flex-start;max-width:920px;margin:0 auto;flex-wrap:wrap}
+.step-col{flex:1;min-width:160px;padding:0 8px;display:flex;flex-direction:column;align-items:center;position:relative}
+.step-col:not(:last-child)::after{content:'';position:absolute;top:38px;left:calc(50% + 38px);width:calc(100% - 76px);height:1px;border-top:2px dashed rgba(255,255,255,0.15)}
+.step-icon-wrap{width:76px;height:76px;border-radius:50%;background:var(--bg2);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:30px;margin-bottom:20px;position:relative}
+.step-num-badge{position:absolute;top:-4px;right:-4px;width:24px;height:24px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center}
+.step-title{font-weight:700;font-size:14px;color:var(--white);margin-bottom:8px;line-height:1.5;text-align:center}
+.step-desc{font-size:13px;color:var(--w60);line-height:1.75;max-width:160px;text-align:center}
+#why{background:linear-gradient(135deg,var(--red-dk) 0%,var(--red) 60%,#D93338 100%);padding:70px 44px;text-align:center;position:relative;overflow:hidden}
+#why::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:900px;margin:0 auto 44px}
+.why-card{display:flex;flex-direction:column;align-items:center;text-align:center;padding:8px 4px}
+.why-icon{width:64px;height:64px;border-radius:50%;border:2px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:14px}
+.why-title{font-weight:700;font-size:15px;color:#fff;margin-bottom:6px}
+.why-desc{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.7}
+.guarantee-banner{background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.15);border-radius:14px;padding:24px 32px;max-width:720px;margin:0 auto;display:flex;align-items:center;gap:24px;text-align:left}
+.gb-seal{width:80px;height:80px;min-width:80px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-lt));display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;color:#000;font-size:11px;text-align:center;line-height:1.3;box-shadow:0 4px 20px rgba(0,0,0,0.3)}
+.gb-seal span{font-size:20px}
+.gb-title{font-family:var(--fd);font-weight:700;font-size:22px;color:#fff;margin-bottom:4px}
+.gb-title-sub{font-size:15px;font-weight:600;color:var(--gold-lt);margin-bottom:6px}
+.gb-text{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.6}
+#reviews{background:var(--bg2);padding:80px 44px;text-align:center}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto}
+.review-card{background:var(--bg3);border:1px solid rgba(201,168,76,0.18);border-radius:14px;padding:26px 22px;text-align:left;transition:border-color .2s,transform .2s}
+.review-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.rc-stars{color:#F5B700;font-size:16px;letter-spacing:1px;margin-bottom:12px}
+.rc-text{font-size:14px;color:var(--w60);line-height:1.8;margin-bottom:14px}
+.rc-author{font-weight:700;font-size:13px;color:var(--white)}
+#bottom-cta{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 44px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.bcta-left{display:flex;align-items:center;gap:20px}
+.bcta-passport-img{width:70px;height:70px;border-radius:10px;overflow:hidden;background:url('https://images.unsplash.com/photo-1569974498991-d3c12a504f45?w=200&q=80') center/cover;flex-shrink:0}
+.bcta-title{font-family:var(--fd);font-weight:700;font-size:20px;color:var(--white);margin-bottom:4px}
+.bcta-sub{font-size:14px;color:var(--red);font-weight:600}
+.bcta-right{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+footer{background:var(--bg2);border-top:1px solid var(--border-g);padding:24px 44px;display:flex;align-items:center;justify-content:space-between;font-size:13px;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:var(--fd);font-size:16px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase}
+.footer-items{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.footer-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gray);font-weight:600}
+.footer-item svg{width:16px;height:16px;color:var(--gray);flex-shrink:0}
+.footer-links{display:flex;gap:20px}
+.footer-links a{color:#555;text-decoration:none;font-size:13px;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+@media(max-width:900px){nav{padding:0 20px}#hero{grid-template-columns:1fr}.hero-right{min-height:320px}.hero-img::after{background:linear-gradient(to bottom,transparent 40%,var(--bg2) 100%)}.hero-left{padding:40px 20px}#how,#why,#reviews{padding:60px 20px}#bottom-cta{flex-direction:column;text-align:center;padding:24px 20px}.bcta-left{flex-direction:column;text-align:center}.bcta-right{justify-content:center}.why-grid{grid-template-columns:repeat(2,1fr)}.reviews-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}.guarantee-banner{flex-direction:column;text-align:center}.steps-row{flex-direction:column;align-items:center;gap:32px}.step-col:not(:last-child)::after{display:none}footer{padding:20px;justify-content:center;text-align:center}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo"><span class="logo-text">Aurelius</span></a>
+  <div class="nav-right">
+    <div class="nav-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      100% Secure
+    </div>
+    <div class="nav-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+      24/7 Support
+    </div>
+    <a href="/indonesia/ar/" class="nav-lang">عربي</a>
+  </div>
+</nav>
+<section id="hero">
+  <div class="hero-left">
+    <h1 class="hero-title">Indonesia Visa</h1>
+    <div class="hero-title-days">
+      <div class="days-line"></div>
+      In 3 Days Only
+      <div class="days-line"></div>
+    </div>
+    <div class="no-bank-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+      No Bank Statement Required
+    </div>
+    <p class="hero-sub">Fast, simple, and hassle-free.<br>Get your Indonesia visa in just 3 days<br>— no bank statement needed.</p>
+    <div class="hero-badges">
+      <div class="h-badge"><div class="h-badge-icon">📅</div><div><div style="font-size:12px;font-weight:700;color:var(--white)">Visa in</div><div style="font-size:12px;color:var(--gray)">3 Days</div></div></div>
+      <div class="h-badge"><div class="h-badge-icon">🏦</div><div><div style="font-size:12px;font-weight:700;color:var(--white)">No Bank</div><div style="font-size:12px;color:var(--gray)">Statement</div></div></div>
+      <div class="h-badge"><div class="h-badge-icon">✅</div><div><div style="font-size:12px;font-weight:700;color:var(--white)">100% Guaranteed</div><div style="font-size:12px;color:var(--gray)">Approval</div></div></div>
+    </div>
+    <a href="https://api.whatsapp.com/send/?phone=971506862049&text&type=phone_number&app_absent=0" class="btn-apply" target="_blank">
+      Apply Now
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <div class="hero-trust-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      Trusted by over 10,000 travellers
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img"></div>
+    <div class="visa-float-card">
+      <div class="vfc-icon">⏱</div>
+      <div class="vfc-label">VISA IN</div>
+      <div class="vfc-val">3 Days</div>
+      <div class="vfc-sub">Guaranteed Process</div>
+    </div>
+  </div>
+</section>
+<section id="how">
+  <div class="s-eyebrow"><div class="ey-line"></div><div class="ey-text">How It Works</div><div class="ey-line"></div></div>
+  <div class="s-diamond">✦</div>
+  <div class="steps-row">
+    <div class="step-col">
+      <div class="step-icon-wrap"><div class="step-num-badge">1</div><svg width="34" height="34" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.874L.053 23.947l6.261-1.448A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.892 0-3.658-.518-5.17-1.42l-.371-.22-3.842.888.93-3.726-.241-.384A9.797 9.797 0 012.182 12C2.182 6.575 6.575 2.182 12 2.182c5.425 0 9.818 4.393 9.818 9.818 0 5.425-4.393 9.818-9.818 9.818z"/></svg></div>
+      <div class="step-title">Message Us<br>on WhatsApp</div>
+      <div class="step-desc">Send us a WhatsApp message and share your documents.</div>
+    </div>
+    <div class="step-col">
+      <div class="step-icon-wrap"><div class="step-num-badge">2</div><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#C0272D" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg></div>
+      <div class="step-title">We Process<br>Your Application</div>
+      <div class="step-desc">Our experts review your documents and begin the application process.</div>
+    </div>
+    <div class="step-col">
+      <div class="step-icon-wrap"><div class="step-num-badge">3</div><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#C0272D" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <div class="step-title">Receive<br>Approval</div>
+      <div class="step-desc">Your visa approval arrives by email within 3 days.</div>
+    </div>
+    <div class="step-col">
+      <div class="step-icon-wrap"><div class="step-num-badge">4</div><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#C0272D" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+      <div class="step-title">Travel to<br>Indonesia</div>
+      <div class="step-desc">Pack your bags and enjoy your trip with full confidence!</div>
+    </div>
+  </div>
+</section>
+<section id="why">
+  <div class="s-eyebrow"><div class="ey-line" style="background:rgba(255,255,255,0.5)"></div><div class="ey-text" style="color:#fff">Why Choose Us</div><div class="ey-line" style="background:rgba(255,255,255,0.5)"></div></div>
+  <div class="s-diamond" style="color:rgba(255,255,255,0.5);margin-bottom:44px">✦</div>
+  <div class="why-grid">
+    <div class="why-card"><div class="why-icon">⚡</div><div class="why-title">Lightning Fast</div><div class="why-desc">Visa in just 3 days</div></div>
+    <div class="why-card"><div class="why-icon">🏦</div><div class="why-title">No Bank Statement</div><div class="why-desc">Simple requirements, no bank statement needed</div></div>
+    <div class="why-card"><div class="why-icon">🛡️</div><div class="why-title">100% Guaranteed</div><div class="why-desc">We guarantee you'll get your visa</div></div>
+    <div class="why-card"><div class="why-icon">🎧</div><div class="why-title">24/7 Support</div><div class="why-desc">Our team is available to help at any time</div></div>
+  </div>
+  <div class="guarantee-banner">
+    <div class="gb-seal"><span>💰</span><div style="font-size:10px">Guarantee</div><div style="font-size:18px;font-weight:900">100%</div></div>
+    <div><div class="gb-title">Visa not approved?</div><div class="gb-title-sub">We refund your full payment. No questions asked.</div><div class="gb-text">Your complete satisfaction is 100% guaranteed.</div></div>
+  </div>
+</section>
+<section id="reviews">
+  <div class="s-eyebrow"><div class="ey-line"></div><div class="ey-text">Thousands Trust Us</div><div class="ey-line"></div></div>
+  <div class="s-diamond">✦</div>
+  <div class="reviews-grid">
+    <div class="review-card"><div class="rc-stars">★★★★★</div><p class="rc-text">Got my visa in just 3 days! The process was so easy and no bank statement required.</p><div class="rc-author">Ahmed K.</div></div>
+    <div class="review-card"><div class="rc-stars">★★★★★</div><p class="rc-text">Professional and incredibly fast service. Highly recommend to anyone travelling to Indonesia.</p><div class="rc-author">Sara M.</div></div>
+    <div class="review-card"><div class="rc-stars">★★★★★</div><p class="rc-text">Best visa service! Everything went smoothly and securely. Thank you Aurelius team.</p><div class="rc-author">Dawoud L.</div></div>
+  </div>
+</section>
+<div id="bottom-cta">
+  <div class="bcta-left">
+    <div class="bcta-passport-img"></div>
+    <div><div class="bcta-title">Get Your Indonesia Visa in 3 Days</div><div class="bcta-sub">No bank statement required</div></div>
+  </div>
+  <div class="bcta-right">
+    <a href="https://api.whatsapp.com/send/?phone=971506862049&text&type=phone_number&app_absent=0" class="btn-apply" target="_blank">
+      Apply Now
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+<footer>
+  <div class="footer-logo">Aurelius Travel</div>
+  <div class="footer-items">
+    <div class="footer-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Secure Payments</div>
+    <div class="footer-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Data Protection</div>
+    <div class="footer-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Refund Guarantee</div>
+  </div>
+  <div class="footer-links"><a href="/schengen/">Schengen Visa</a><a href="https://api.whatsapp.com/send/?phone=971506862049&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></div>
+</footer>
+</body>
+</html>
