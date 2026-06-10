@@ -1,1 +1,274 @@
-SCHENGEN_EN_PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelius Travel – Schengen Visa Experts</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C9A84C;--gold-lt:#E2C17A;--gold-dk:#9A7230;--bg:#0A0A0A;--bg2:#111111;--bg3:#1A1A1A;--surface:#1C1C1C;--border:rgba(255,255,255,0.07);--border-g:rgba(201,168,76,0.2);--white:#FFFFFF;--w90:rgba(255,255,255,0.9);--w60:rgba(255,255,255,0.6);--w35:rgba(255,255,255,0.35);--red:#E04040;--gray:#888888;--fd:'Cormorant Garamond',Georgia,serif;--fb:'DM Sans',system-ui,sans-serif}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--bg);color:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 44px;background:rgba(10,10,10,0.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border-g)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{height:32px;width:auto}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-lang{font-size:12px;font-weight:600;color:var(--w60);letter-spacing:1px;text-decoration:none;padding:6px 14px;border:1px solid var(--border);border-radius:4px;transition:all .2s}
+.nav-lang:hover{color:var(--gold);border-color:var(--border-g)}
+.nav-cta{background:var(--gold);color:var(--bg);font-size:13px;font-weight:700;padding:10px 22px;border-radius:4px;text-decoration:none;display:flex;align-items:center;gap:8px;transition:background .2s,transform .15s}
+.nav-cta:hover{background:var(--gold-lt);transform:translateY(-1px)}
+#hero{min-height:100vh;padding-top:66px;background:url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1400&q=85') center/cover no-repeat;position:relative;display:flex;align-items:center}
+#hero::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.68);z-index:1}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1200px;margin:0 auto;width:100%;padding:0 44px;position:relative;z-index:2}
+.hero-left{display:flex;flex-direction:column;justify-content:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.3);border-radius:20px;padding:6px 14px;font-size:12px;color:var(--gold-lt);font-weight:500;margin-bottom:28px;width:fit-content;letter-spacing:1px;text-transform:uppercase}
+.hero-title{font-family:var(--fd);font-size:clamp(42px,5vw,68px);font-weight:700;line-height:1.1;margin-bottom:20px}
+.hero-title .hl{color:var(--gold-lt);font-style:italic}
+.hero-sub{font-size:17px;color:#CCCCCC;line-height:1.65;margin-bottom:36px;max-width:480px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+.btn-primary{background:var(--gold);color:var(--bg);padding:15px 28px;border-radius:4px;font-weight:700;font-size:15px;text-decoration:none;display:flex;align-items:center;gap:10px;transition:background .2s,transform .15s}
+.btn-primary:hover{background:var(--gold-lt);transform:translateY(-1px)}
+.btn-outline{border:1px solid rgba(201,168,76,0.4);color:var(--gold-lt);padding:15px 28px;border-radius:4px;font-weight:500;font-size:15px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.btn-outline:hover{border-color:var(--gold);background:rgba(201,168,76,0.06)}
+.hero-trust{display:flex;gap:24px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:13px;color:#AAAAAA}
+.trust-icon{color:var(--gold);font-size:16px}
+.hero-right{display:flex;align-items:center;justify-content:center}
+.passport-card{background:linear-gradient(135deg,#1C1200,#2A1E00);border:1px solid rgba(201,168,76,0.25);border-radius:16px;padding:50px 40px;text-align:center;position:relative;box-shadow:0 30px 80px rgba(0,0,0,0.6);max-width:320px;width:100%}
+.floating-badge{position:absolute;top:-16px;right:-16px;background:var(--gold);color:var(--bg);border-radius:50%;width:70px;height:70px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;font-weight:700;text-align:center;line-height:1.2}
+.stars-circle{width:80px;height:80px;margin:0 auto 20px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;letter-spacing:-4px}
+.pc-title{font-family:var(--fd);font-size:28px;font-weight:700;color:var(--gold-lt);margin-bottom:4px;letter-spacing:4px;text-transform:uppercase}
+.pc-sub{font-size:12px;letter-spacing:3px;color:var(--gray);text-transform:uppercase;margin-bottom:24px}
+.pc-body{font-size:13px;color:#AAAAAA;line-height:1.7}
+.pc-stats{display:flex;justify-content:space-around;border-top:1px solid rgba(201,168,76,0.15);padding-top:20px;margin-top:20px}
+.stat-n{font-family:var(--fd);font-size:28px;font-weight:700;color:var(--gold-lt)}
+.stat-l{font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:1px}
+.dest-strip{background:var(--bg2);overflow:hidden}
+.dest-inner{display:flex;height:160px}
+.dest-img{flex:1;min-width:0;background-size:cover;background-position:center;position:relative;overflow:hidden;transition:flex .4s ease}
+.dest-img::after{content:attr(data-city);position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.7);color:var(--gold-lt);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;border-radius:3px;white-space:nowrap}
+.dest-img:hover{flex:2}
+.d-paris{background-image:url('https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=400&q=80')}
+.d-rome{background-image:url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&q=80')}
+.d-venice{background-image:url('https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=400&q=80')}
+.d-berlin{background-image:url('https://images.unsplash.com/photo-1560969184-10fe8719e047?w=400&q=80')}
+section{padding:80px 44px}
+.s-label{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gray);margin-bottom:12px}
+.s-label.gold{color:var(--gold)}
+.s-title{font-family:var(--fd);font-size:clamp(28px,3.5vw,46px);font-weight:700;line-height:1.2;margin-bottom:40px}
+.s-title .red{color:var(--red)}
+.s-title .gl{color:var(--gold-lt)}
+#problem{background:var(--bg2);text-align:center}
+.prob-icon{font-size:28px;margin-bottom:14px}
+.problems-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:900px;margin:0 auto}
+.prob-card{background:#fff;border:1px solid #E8E0D0;border-radius:12px;padding:28px 20px;text-align:center;color:var(--bg)}
+.prob-card-icon{font-size:32px;margin-bottom:12px}
+.prob-card-title{font-weight:600;font-size:14px}
+#fix{background:var(--bg)}
+.fix-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.fix-list{list-style:none;margin-top:24px}
+.fix-list li{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;font-size:16px;color:#DDDDDD}
+.check-icon{width:24px;height:24px;min-width:24px;background:rgba(201,168,76,0.15);border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--gold)}
+.fix-right{background:linear-gradient(135deg,#1A1200,#2A1E00);border:1px solid rgba(201,168,76,0.2);border-radius:16px;padding:36px;position:relative}
+.cb-title{font-family:var(--fd);font-size:20px;font-weight:700;color:var(--gold-lt);margin-bottom:20px;letter-spacing:1px;text-transform:uppercase}
+.cl-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(201,168,76,0.1);font-size:14px;color:#CCCCCC}
+.cl-item:last-child{border-bottom:none}
+.cl-box{width:20px;height:20px;min-width:20px;background:var(--gold);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--bg)}
+.shield{position:absolute;bottom:-16px;right:28px;background:var(--gold);color:var(--bg);border-radius:8px;padding:9px 16px;font-size:12px;font-weight:700;text-align:center;line-height:1.4}
+#value{background:var(--bg2);text-align:center}
+.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1000px;margin:0 auto}
+.val-card{background:var(--bg3);border:1px solid rgba(201,168,76,0.15);border-radius:12px;padding:28px 20px;text-align:center;transition:border-color .2s,transform .2s}
+.val-card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.val-icon{font-size:28px;margin-bottom:12px;color:var(--gold)}
+.val-title{font-size:13px;color:#AAAAAA;font-weight:500}
+#reviews{background:var(--bg)}
+.rev-sub{text-align:center;color:var(--gray);margin-bottom:40px;font-size:15px;margin-top:-28px}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1100px;margin:0 auto}
+.rev-card{background:var(--bg3);border:1px solid rgba(201,168,76,0.18);border-radius:14px;padding:28px 26px;position:relative;transition:border-color .2s}
+.rev-card:hover{border-color:var(--gold)}
+.rev-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.rev-av{width:46px;height:46px;border-radius:50%;background:var(--gold-dk);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:var(--bg);flex-shrink:0}
+.rev-name{font-weight:600;font-size:15px;color:var(--white)}
+.rev-meta{font-size:12px;color:var(--gray)}
+.rev-stars{color:#F5C542;font-size:14px;margin-bottom:12px}
+.rev-text{font-size:15px;color:#CCCCCC;line-height:1.6}
+.rev-src{margin-top:16px;display:flex;align-items:center;gap:6px;font-size:12px;color:var(--gray)}
+.g-dot{width:18px;height:18px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#4285F4}
+#requirements{background:var(--bg2)}
+.req-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.req-list{list-style:none;margin-top:20px}
+.req-list li{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:15px;color:#CCCCCC}
+.req-check{color:var(--gold);font-size:16px;margin-top:2px}
+.faq-title{font-family:var(--fd);font-size:22px;font-weight:700;color:var(--gold-lt);margin-bottom:20px}
+.faq-item{border-bottom:1px solid rgba(201,168,76,0.15);padding:16px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-size:15px;color:var(--white);font-weight:500;gap:12px}
+.faq-arrow{color:var(--gold);font-size:18px;transition:transform .3s;flex-shrink:0}
+.faq-a{font-size:14px;color:var(--gray);max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-item.open .faq-a{max-height:120px;padding-top:10px}
+#process{background:var(--bg);text-align:center}
+.process-steps{display:flex;justify-content:center;align-items:flex-start;gap:0;max-width:1000px;margin:40px auto 0;flex-wrap:wrap}
+.step-item{flex:1;min-width:160px;position:relative;text-align:center;padding:0 16px}
+.step-item:not(:last-child)::after{content:'';position:absolute;top:28px;left:calc(50% + 28px);width:calc(100% - 56px);height:1px;background:linear-gradient(to right,var(--gold-dk),transparent)}
+.step-circle{width:56px;height:56px;border-radius:50%;background:var(--gold);color:var(--bg);display:flex;align-items:center;justify-content:center;font-size:22px;margin:0 auto 16px}
+.step-title{font-size:14px;font-weight:600;color:var(--white);margin-bottom:6px}
+.step-desc{font-size:12px;color:var(--gray)}
+#cta{background:linear-gradient(135deg,#1A1200,#0A0A0A);border-top:1px solid rgba(201,168,76,0.2);padding:60px 44px;text-align:center}
+.cta-title{font-family:var(--fd);font-size:clamp(28px,4vw,44px);font-weight:700;color:var(--white);margin-bottom:12px}
+.cta-sub{color:var(--gray);margin-bottom:32px;font-size:16px}
+.cta-sub .red{color:#E88}
+.cta-btn-row{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.cta-note{font-size:13px;color:var(--gray);display:flex;align-items:center;justify-content:center;gap:6px}
+.lock{color:var(--gold)}
+footer{background:#050505;border-top:1px solid rgba(201,168,76,0.1);padding:28px 44px;display:flex;align-items:center;justify-content:space-between;font-size:13px;color:#444}
+.footer-logo{font-family:var(--fd);font-size:16px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase}
+.footer-links{display:flex;gap:24px}
+.footer-links a{color:#555;text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.wa-svg{width:18px;height:18px;flex-shrink:0}
+@media(max-width:900px){nav{padding:0 20px}.hero-grid{grid-template-columns:1fr;padding:0 20px}.hero-right{display:none}section{padding:60px 20px}#cta{padding:60px 20px}.fix-inner,.req-inner{grid-template-columns:1fr}.problems-grid,.value-grid{grid-template-columns:1fr 1fr}.reviews-grid{grid-template-columns:1fr}.process-steps{gap:24px}.step-item:not(:last-child)::after{display:none}footer{flex-direction:column;gap:16px;text-align:center;padding:24px 20px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo"><img src="data:image/png;base64,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" alt="Aurelius Travel" style="height:32px;width:auto"></a>
+  <div class="nav-right">
+    <a href="/schengen/ar/" class="nav-lang">عربي</a>
+    <a href="https://api.whatsapp.com/send/?phone=971506862049&text&type=phone_number&app_absent=0" class="nav-cta" target="_blank">
+      <svg class="wa-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.874L.053 23.947l6.261-1.448A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.892 0-3.658-.518-5.17-1.42l-.371-.22-3.842.888.93-3.726-.241-.384A9.797 9.797 0 012.182 12C2.182 6.575 6.575 2.182 12 2.182c5.425 0 9.818 4.393 9.818 9.818 0 5.425-4.393 9.818-9.818 9.818z"/></svg>
+      Chat on WhatsApp
+    </a>
+  </div>
+</nav>
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-badge">⚡ Schengen Visa Experts</div>
+      <h1 class="hero-title">Approval <span class="hl">before</span><br>the appointment.</h1>
+      <p class="hero-sub">We handle everything — so the embassy sees a perfect file. No guesswork, no rejections.</p>
+      <div class="cta-row">
+        <a href="https://api.whatsapp.com/send/?phone=971506862049&text&type=phone_number&app_absent=0" class="btn-primary" target="_blank"><svg class="wa-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.874L.053 23.947l6.261-1.448A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.892 0-3.658-.518-5.17-1.42l-.371-.22-3.842.888.93-3.726-.241-.384A9.797 9.797 0 012.182 12C2.182 6.575 6.575 2.182 12 2.182c5.425 0 9.818 4.393 9.818 9.818 0 5.425-4.393 9.818-9.818 9.818z"/></svg>Chat on WhatsApp</a>
+        <a href="#process" class="btn-outline">See How It Works →</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><span class="trust-icon">⚡</span> Confirmed bookings (Not dummy)</div>
+        <div class="trust-item"><span class="trust-icon">📋</span> Full file review</div>
+        <div class="trust-item"><span class="trust-icon">🎯</span> Step-by-step support</div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="passport-card">
+        <div class="floating-badge">✓ VISA<br>APPROVED</div>
+        <div class="stars-circle">★★★★★</div>
+        <div class="pc-title">Schengen</div>
+        <div class="pc-sub">Visa Specialists</div>
+        <div class="pc-body">We build approval-ready<br>applications — not just submissions.</div>
+        <div class="pc-stats">
+          <div><div class="stat-n">5★</div><div class="stat-l">Google Rating</div></div>
+          <div><div class="stat-n">100%</div><div class="stat-l">File Review</div></div>
+          <div><div class="stat-n">0</div><div class="stat-l">Dummy Docs</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dest-strip"><div class="dest-inner"><div class="dest-img d-paris" data-city="Paris"></div><div class="dest-img d-rome" data-city="Rome"></div><div class="dest-img d-venice" data-city="Venice"></div><div class="dest-img d-berlin" data-city="Berlin"></div></div></div>
+<section id="problem">
+  <div class="prob-icon">⚠️</div>
+  <p class="s-label">The Problem</p>
+  <h2 class="s-title" style="margin-bottom:50px">Most visa rejections happen <span class="red">before</span> the appointment.</h2>
+  <div class="problems-grid">
+    <div class="prob-card"><div class="prob-card-icon">✈️</div><div class="prob-card-title">Fake flight tickets</div></div>
+    <div class="prob-card"><div class="prob-card-icon">🏦</div><div class="prob-card-title">Weak bank statement</div></div>
+    <div class="prob-card"><div class="prob-card-icon">🗺️</div><div class="prob-card-title">Wrong country choice</div></div>
+    <div class="prob-card"><div class="prob-card-icon">📂</div><div class="prob-card-title">Missing documents</div></div>
+  </div>
+</section>
+<section id="fix">
+  <div class="fix-inner">
+    <div>
+      <p class="s-label gold">Our Solution</p>
+      <h2 class="s-title">We <span class="gl">fix</span> all of that.</h2>
+      <ul class="fix-list">
+        <li><div class="check-icon">✓</div> We review your full profile</li>
+        <li><div class="check-icon">✓</div> We prepare your entire file</li>
+        <li><div class="check-icon">✓</div> We choose the best country</li>
+        <li><div class="check-icon">✓</div> We make sure everything is correct before submission</li>
+      </ul>
+      <div style="margin-top:32px"><a href="https://api.whatsapp.com/send/?phone=971506862049&text&type=phone_number&app_absent=0" class="btn-primary" target="_blank"><svg class="wa-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.874L.053 23.947l6.261-1.448A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.892 0-3.658-.518-5.17-1.42l-.371-.22-3.842.888.93-3.726-.241-.384A9.797 9.797 0 012.182 12C2.182 6.575 6.575 2.182 12 2.182c5.425 0 9.818 4.393 9.818 9.818 0 5.425-4.393 9.818-9.818 9.818z"/></svg>Chat on WhatsApp</a></div>
+    </div>
+    <div class="fix-right">
+      <div class="cb-title">📋 Application File</div>
+      <div class="cl-item"><div class="cl-box">✓</div> Passport &amp; ID copy verified</div>
+      <div class="cl-item"><div class="cl-box">✓</div> Bank statement audited</div>
+      <div class="cl-item"><div class="cl-box">✓</div> Confirmed flight bookings</div>
+      <div class="cl-item"><div class="cl-box">✓</div> Hotel reservations confirmed</div>
+      <div class="cl-item"><div class="cl-box">✓</div> Tailored cover letter ready</div>
+      <div class="cl-item"><div class="cl-box">✓</div> Country strategy selected</div>
+      <div class="shield">🛡️ Approval-Ready</div>
+    </div>
+  </div>
+</section>
+<section id="value">
+  <p class="s-label gold" style="text-align:center">What We Do</p>
+  <h2 class="s-title" style="text-align:center;color:var(--white)">We don't submit files.<br>We build <span class="gl">approval-ready</span> applications.</h2>
+  <div class="value-grid">
+    <div class="val-card"><div class="val-icon">📊</div><div class="val-title">Bank statement audit</div></div>
+    <div class="val-card"><div class="val-icon">🚩</div><div class="val-title">Strategy-based country selection</div></div>
+    <div class="val-card"><div class="val-icon">✍️</div><div class="val-title">Tailored cover letter &amp; itinerary</div></div>
+    <div class="val-card"><div class="val-icon">📁</div><div class="val-title">Full file preparation before appointment</div></div>
+  </div>
+</section>
+<section id="reviews">
+  <p class="s-label gold" style="text-align:center">Testimonials</p>
+  <h2 class="s-title" style="text-align:center">Real people. <span class="gl">Real approvals.</span></h2>
+  <p class="rev-sub">What our clients say on Google Reviews</p>
+  <div class="reviews-grid">
+    <div class="rev-card"><div class="rev-head"><div class="rev-av">A</div><div><div class="rev-name">Anna</div><div class="rev-meta">1 review · 4 weeks ago</div></div></div><div class="rev-stars">★★★★★</div><p class="rev-text">Definitely the best in the field, honest people and professionals 👏</p><div class="rev-src"><div class="g-dot">G</div> Google Reviews</div></div>
+    <div class="rev-card"><div class="rev-head"><div class="rev-av" style="background:#8B6914">N</div><div><div class="rev-name">Ndeneh Diland</div><div class="rev-meta">2 reviews · 3 weeks ago</div></div></div><div class="rev-stars">★★★★★</div><p class="rev-text">Professional team, clear process, got my Schengen visa approved smoothly</p><div class="rev-src"><div class="g-dot">G</div> Google Reviews</div></div>
+    <div class="rev-card" style="border-style:dashed;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:180px"><div style="font-size:28px;margin-bottom:10px">⭐</div><div style="color:var(--gold-lt);font-weight:600;margin-bottom:6px">More Reviews</div><div style="color:var(--gray);font-size:13px">See all our reviews on Google</div><a href="#" style="margin-top:14px;color:var(--gold);font-size:13px;font-weight:600">View on Google →</a></div>
+  </div>
+</section>
+<section id="requirements">
+  <div class="req-inner">
+    <div>
+      <p class="s-label gold">Before You Apply</p>
+      <h2 class="s-title" style="font-size:clamp(24px,3vw,34px);margin-bottom:8px;color:var(--white)">Before you apply,<br>you need to know this:</h2>
+      <ul class="req-list">
+        <li><span class="req-check">✓</span> Bookings must be confirmed (not dummy)</li>
+        <li><span class="req-check">✓</span> Bank statement must make sense</li>
+        <li><span class="req-check">✓</span> Your file must match your travel plan</li>
+      </ul>
+    </div>
+    <div>
+      <div class="faq-title">Frequently Asked</div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q">How long does the process take? <span class="faq-arrow">⌄</span></div><div class="faq-a">Typically 3–5 business days from the moment we receive all your documents.</div></div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q">Do I need to visit your office? <span class="faq-arrow">⌄</span></div><div class="faq-a">No. Everything is handled remotely via WhatsApp and email. You only attend the embassy appointment yourself.</div></div>
+      <div class="faq-item" onclick="this.classList.toggle('open')"><div class="faq-q">Can you guarantee approval? <span class="faq-arrow">⌄</span></div><div class="faq-a">No one can legally guarantee visa approval. What we guarantee is a complete, professional, and approval-ready file that maximizes your chances significantly.</div></div>
+    </div>
+  </div>
+</section>
+<section id="process">
+  <p class="s-label gold" style="text-align:center">Simple 4-Step Process</p>
+  <h2 class="s-title" style="text-align:center;color:var(--white)">Our <span class="gl">simple</span> process</h2>
+  <div class="process-steps">
+    <div class="step-item"><div class="step-circle">🛂</div><div class="step-title">Send Passport &amp; ID</div><div class="step-desc">Share your documents securely via WhatsApp</div></div>
+    <div class="step-item"><div class="step-circle">🔍</div><div class="step-title">We Review Your Profile</div><div class="step-desc">We analyze your full situation and plan the strategy</div></div>
+    <div class="step-item"><div class="step-circle">📂</div><div class="step-title">We Prepare Your File</div><div class="step-desc">Complete application ready for the embassy</div></div>
+    <div class="step-item"><div class="step-circle">🏛️</div><div class="step-title">You Attend the Appointment</div><div class="step-desc">Show up with a perfect, ready-to-submit file</div></div>
+  </div>
+</section>
+<section id="cta">
+  <h2 class="cta-title">Planning to travel soon?</h2>
+  <p class="cta-sub">Appointments get taken fast. <span class="red">Don't wait.</span></p>
+  <div class="cta-btn-row"><a href="https://api.whatsapp.com/send/?phone=971506862049&text&type=phone_number&app_absent=0" class="btn-primary" target="_blank"><svg class="wa-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.874L.053 23.947l6.261-1.448A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.892 0-3.658-.518-5.17-1.42l-.371-.22-3.842.888.93-3.726-.241-.384A9.797 9.797 0 012.182 12C2.182 6.575 6.575 2.182 12 2.182c5.425 0 9.818 4.393 9.818 9.818 0 5.425-4.393 9.818-9.818 9.818z"/></svg>Chat on WhatsApp</a></div>
+  <p class="cta-note"><span class="lock">🔒</span> No payment until we check your profile.</p>
+</section>
+<footer>
+  <div class="footer-logo">Aurelius Travel</div>
+  <div style="color:#444;font-size:13px">© 2025 Aurelius Travel. All rights reserved.</div>
+  <div class="footer-links"><a href="/indonesia/">Indonesia Visa</a><a href="https://api.whatsapp.com/send/?phone=971506862049&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></div>
+</footer>
+</body>
+</html>
